@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const bird = document.querySelector('.bird');
   const gameDisplay = document.querySelector('.game-container');
   const ground = document.querySelector('.ground');
-
+  const gameOverText = document.querySelector('.gameOver');
+  const btn2 = document.body;
+  
   let birdLeft = 220;
   let birdBottom = 100;
   let gravity = 2;
@@ -18,10 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let gameTimerId = setInterval(startGame, 20);
 
   function control(e) {
-    if (e.keyCode === 32) {
+    if (e.keyCode === 32 ) {
       jump();
     }
   }
+  btn2.addEventListener('click', jump)
 
   function jump() {
     birdBottom += 50;
@@ -72,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     clearInterval(gameTimerId);
     isGameOver = true;
     document.removeEventListener('keyup', control)
-    alert('GAME OVER')
+    //alert('GAME OVER')
+    gameOverText.style.opacity = '1';
   }
 });
