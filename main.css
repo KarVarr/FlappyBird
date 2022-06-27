@@ -1,5 +1,7 @@
 body{
+   
     display: flex;
+    
 }
 
 .game-container {
@@ -21,7 +23,7 @@ body{
     height: 45px;
 }
 
-.border-left {
+/* .border-left {
     width: 80px;
     height: 790px;
     position: absolute;
@@ -35,15 +37,15 @@ body{
     position: absolute;
     background-color: #fff;
     z-index: 2;
-}
-.border-top {
+} */
+/* .border-top {
     width: 660px;
     height: 50px;
     position: absolute;
     background-color: #fff;
     z-index: 2;
     top: -50px
-}
+} */
 .ground {
     background-image: url('img/bottom-background.png');
     width: 500px;

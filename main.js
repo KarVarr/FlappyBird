@@ -72,5 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
     clearInterval(gameTimerId);
     isGameOver = true;
     document.removeEventListener('keyup', control)
+    alert('GAME OVER')
   }
 });
