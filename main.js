@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       jump();
     }
   }
-  btn2.addEventListener('click', jump)
+  btn2.addEventListener('touchstart', jump)
 
   function jump() {
     birdBottom += 50;
